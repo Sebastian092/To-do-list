@@ -29,23 +29,22 @@
     };
 
     const bindEvents = () =>{
-        const removeButtons = document.querySelectorAll(".js-done");
+        const ToggleDoneButtons = document.querySelectorAll(".js-done");
 
-        removeButtons.forEach((toggleDoneButton, index) => {
+        ToggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-remove");
+        const removeButtons = document.querySelectorAll(".js-remove");
 
-        toggleDoneButtons.forEach((removeButton, index) => {
+        removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
                 removeTask(index);
             });
         });
     };
-    
     const render = () => {
         let htmlString = "";
 
