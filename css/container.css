@@ -1,0 +1,28 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    background: white;
+    padding: 5px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+.section__header {
+    padding: 20px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.section {
+    margin: 10px;
+}

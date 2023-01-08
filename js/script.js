@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "najgrać lekcję",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -28,7 +19,7 @@
         render();
     };
 
-    const bindEvents = () =>{
+    const bindEvents = () => {
         const ToggleDoneButtons = document.querySelectorAll(".js-done");
 
         ToggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -50,12 +41,10 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li 
-                ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-                > 
-                <button class="js-done">zrobione</button>
-                <button class="js-remove">usuń</button>
-            ${task.content}
+            <li class="task__item">
+                <button class="js-done task__button task__button--done">${task.done ? "✔" : ""}</button> 
+               <span class="task__content ${task.done ? "task__content--done" : ""}">${task.content}</span>
+                <button class="js-remove task__delete">🗑️</button>
             </li>
             `;
         }
