@@ -61,9 +61,12 @@
 
         if (newTaskContent === "") {
             return;
-        }
+        };
+
 
         addNewTask(newTaskContent);
+        document.querySelector(".js-newTask").value = "";
+        document.getElementById("focus").focus();
     };
 
     const init = () => {
