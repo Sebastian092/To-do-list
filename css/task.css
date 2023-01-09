@@ -18,11 +18,33 @@
     background: green;
 }
 
+.task__button--done:hover {
+    background: rgb(2, 181, 2);
+}
+
+.task__button--done:active {
+    background: rgb(4, 239, 4);
+}
+
 .task__content--done {
     text-decoration: line-through;
 }
 
 .task__delete {
+    border: none;
+    background: rgb(225, 4, 4);
+    width: 35px;
+    height: 35px;
+}
+
+.task__delete:hover {
+    border: none;
+    background: rgb(242, 4, 4);
+    width: 35px;
+    height: 35px;
+}
+
+.task__delete:active {
     border: none;
     background: red;
     width: 35px;
@@ -33,12 +55,4 @@
     border: none;
     background: teal;
     color: white;
-}
-
-.input {
-    padding: 8px;
-}
-
-.div {
-    margin: 10px;
 }

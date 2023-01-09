@@ -6,6 +6,7 @@
 .section {
     background: white;
     padding: 5px;
+    box-shadow: 1px -1px 5px 0px #D5CEDD;
 }
 
 .form {
@@ -14,6 +15,12 @@
     gap: 20px;
 }
 
+@media (max-width: 791px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+    
 .section__header {
     padding: 20px;
     border-bottom: 2px solid whitesmoke;
@@ -24,5 +31,13 @@
 }
 
 .section {
+    margin: 10px;
+}
+
+.input {
+    padding: 8px;
+}
+
+.div {
     margin: 10px;
 }
