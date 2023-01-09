@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="css/task.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/container.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>To do list</title>
 </head>
 
 <body class="body">
@@ -21,16 +28,17 @@
             <h2 class="section__header">Dodaj nowe zadanie</h2>
             <div class="div">
                 <form class="js-form form">
-                    <input type="text" class="js-newTask input" id="focus" placeholder="co jest do zrobienia?" autofocus>
+                    <input type="text" class="js-newTask input" id="focus" placeholder="co jest do zrobienia?"
+                        autofocus>
                     <button class="button">Dodaj zadanie</button>
                 </form>
             </div>
         </section>
         <section class="section">
-                <h2 class="section__header">lista zadań</h2>
-                <div>
-                    <ul class="js-tasks list"></ul>
-                </div>
+            <h2 class="section__header">lista zadań</h2>
+            <div>
+                <ul class="js-tasks list"></ul>
+            </div>
         </section>
     </main>
 </body>
