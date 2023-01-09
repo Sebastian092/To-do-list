@@ -7,7 +7,7 @@ To do list where you can add new tasks and also delete them when finished
 
 
 ### Link to page
-https://sebastian092.github.io/currency-calculator/
+https://sebastian092.github.io/To-do-list/
 
 #### Technologies:
 - HTML
