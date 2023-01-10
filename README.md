@@ -15,6 +15,7 @@ https://sebastian092.github.io/To-do-list/
 - JS
 - BEM
 - GIT
+- GRID
 
 ##### Creator 
 Sebastian Szaładyga
