@@ -14,6 +14,8 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 20px;
+    padding: 20px;
+    margin: 5px;
 }
 
 @media (max-width: 791px) {
@@ -23,12 +25,13 @@
 }
     
 .section__header {
-    padding: 20px;
+    padding: 15px;
     border-bottom: 2px solid whitesmoke;
 }
 
 .list {
     list-style-type: none;
+    padding: 5px 15px;
 }
 
 .section {
@@ -37,8 +40,4 @@
 
 .form__input {
     padding: 8px;
-}
-
-.section__div {
-    margin: 10px;
 }

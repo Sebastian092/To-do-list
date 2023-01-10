@@ -4,7 +4,7 @@
     gap:10px;
     align-items: center;
     border-bottom: solid 1px whitesmoke;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .task__button {
@@ -30,7 +30,7 @@
     text-decoration: line-through;
 }
 
-.task__delete {
+.task__button--delete {
     border: none;
     background: rgb(235, 4, 4);
     width: 35px;
