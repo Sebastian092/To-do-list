@@ -32,14 +32,14 @@
 
 .task__delete {
     border: none;
-    background: rgb(225, 4, 4);
+    background: rgb(235, 4, 4);
     width: 35px;
     height: 35px;
 }
 
 .task__delete:hover {
     border: none;
-    background: rgb(242, 4, 4);
+    background: rgb(245, 3, 3);
     width: 35px;
     height: 35px;
 }
@@ -51,7 +51,7 @@
     height: 35px;
 }
 
-.button {
+.form__button {
     border: none;
     background: teal;
     color: white;

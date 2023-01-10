@@ -35,11 +35,10 @@
     margin: 10px 0px;
 }
 
-.input {
+.form__input {
     padding: 8px;
 }
 
-.div {
+.section__div {
     margin: 10px;
 }
-
