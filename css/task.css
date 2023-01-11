@@ -56,3 +56,9 @@
     background: teal;
     color: white;
 }
+
+@media (max-width: 791px) {
+    .form__button {
+        padding: 10px;
+}
+}
