@@ -5,7 +5,7 @@
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
-            { content: newTaskContent},
+            { content: newTaskContent },
         ];
 
         render();
@@ -31,7 +31,21 @@
         render();
     };
 
-    const bindEvents = () => {
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render();
+    };
+
+    const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -39,7 +53,9 @@
                 toggleTaskDone(index);
             });
         });
+    };
 
+    const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -49,25 +65,25 @@
         });
     };
 
+
     const renderTasks = () => {
 
-        let htmlString = "";
-
-        for (const task of tasks) {
-            htmlString += `
-            <li class="task__item">
+        const taskToHTML = task => `
+            <li class="task__item ${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-tasks">
                 <button class="js-done task__button task__button--done">${task.done ? "✔" : ""}</button> 
                <span class="task__content ${task.done ? "task__content--done" : ""}">${task.content}</span>
                 <button class="js-remove  task__button task__button--delete">🗑️</button>
             </li>
             `;
-        }
-
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        const tasksElement = document.querySelector(".js-tasks");
+        tasksElement.innerHTML = tasks.map(taskToHTML).join("");
     };
 
-    const renderButtons = () => {};
-    const bindButtonsEvents = () => {};
+    document.querySelector(".js-tasks").innerHTML = htmlString;
+
+
+    const renderButtons = () => { };
+    const bindButtonsEvents = () => { };
 
     const render = () => {
         renderTasks();
@@ -75,6 +91,7 @@
 
         bindEvents();
         bindButtonsEvents();
+        bindRemoveEvents();
     };
 
     const onFormSubmit = (event) => {
