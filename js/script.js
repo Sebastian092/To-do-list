@@ -74,7 +74,7 @@
     </button>
   `;
     };
-    
+
     const bindButtonsEvents = () => {
         const markAllDoneButton = document.querySelector(".js-markAllDone");
 
