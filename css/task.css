@@ -12,7 +12,7 @@
     color: white;
     width: 35px;
     height: 35px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .task__button--done {
@@ -33,30 +33,24 @@
 
 .task__button--delete {
     border: none;
-    background: rgb(235, 4, 4);
+    background: rgb(152, 2, 2);
     width: 35px;
     height: 35px;
 }
 
-.task__delete:hover {
-    border: none;
-    background: rgb(245, 3, 3);
-    width: 35px;
-    height: 35px;
+.task__button--delete:hover {
+    background: rgb(211, 53, 53);
 }
 
-.task__delete:active {
-    border: none;
-    background: red;
-    width: 35px;
-    height: 35px;
+.task__button--delete:active {  
+    background: rgb(246, 77, 77);
 }
 
 .form__button {
     border: none;
     background: teal;
     color: white;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .form__button:hover {
