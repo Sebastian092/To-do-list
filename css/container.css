@@ -7,7 +7,6 @@
     background: white;
     padding: 5px;
     box-shadow: 1px -1px 5px 0px #D5CEDD;
-
 }
 
 .form {
@@ -23,7 +22,7 @@
         grid-template-columns: 1fr;
     }
 }
-    
+
 .section__header {
     padding: 15px;
     border-bottom: 2px solid whitesmoke;
@@ -71,4 +70,17 @@
     color: teal;
     transition: color 1s;
     font-size: 0.7em;
+    transition: 0.5s;
+}
+
+.buttons__button:hover {
+    color: rgb(3, 180, 200);
+}
+
+.buttons__button:active {
+    color: rgb(5, 240, 240);
+}
+
+.buttons__button:disabled {
+    color: rgb(219, 218, 218);
 }

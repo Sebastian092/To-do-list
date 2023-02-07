@@ -1,7 +1,7 @@
 .task__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap:10px;
+    gap: 10px;
     align-items: center;
     border-bottom: solid 1px whitesmoke;
     padding: 5px 0;
@@ -12,6 +12,7 @@
     color: white;
     width: 35px;
     height: 35px;
+    transition: 0.5s;
 }
 
 .task__button--done {
@@ -55,14 +56,25 @@
     border: none;
     background: teal;
     color: white;
+    transition: 0.5s;
+}
+
+.form__button:hover {
+    background: rgb(1, 164, 164);
+    transform: scale(1.15);
+}
+
+.form__button:active {
+    background: rgb(2, 165, 195);
+    transform: scale(1.15);
 }
 
 @media (max-width: 791px) {
     .form__button {
         padding: 10px;
-}
+    }
 }
 
-.task__item--hidden {
+.tasks__item--hidden {
     display: none;
 }
