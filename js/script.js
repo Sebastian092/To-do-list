@@ -64,7 +64,6 @@
             return;
         };
 
-
         buttonsElement.innerHTML = `
     <button class="buttons__button js-toggleHideDoneTasks">
       ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
@@ -129,7 +128,6 @@
         if (newTaskContent === "") {
             return;
         };
-
 
         addNewTask(newTaskContent);
     };
