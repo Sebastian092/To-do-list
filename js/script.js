@@ -64,13 +64,13 @@
             return;
         };
 
-        buttonsElement.innerHTML = `
-    <button class="buttons__button js-toggleHideDoneTasks">
-      ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
-    </button>
-    <button class="buttons__button js-markAllDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
-      Ukończ wszystkie
-    </button>
+    buttonsElement.innerHTML = `
+        <button class="buttons__button js-toggleHideDoneTasks">
+            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+        </button>
+        <button class="buttons__button js-markAllDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+            Ukończ wszystkie
+        </button>
   `;
     };
 

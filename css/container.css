@@ -60,7 +60,7 @@
 
 @media (max-width: 791px) {
     .buttons {
-        justify-content: flex-start;
+        flex-flow: column wrap;
     }
 }
 
